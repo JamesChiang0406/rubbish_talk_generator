@@ -1,0 +1,58 @@
+<div class="container d-flex justify-content-center flex-wrap">
+
+  <div class="title my-4">
+    <h2>
+      你想對誰說幹話？
+    </h2>
+  </div>
+
+  <form method="POST" action="/">
+    <div class="content d-flex">
+      <div class="engineer d-flex flex-wrap justify-content-center">
+        <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg"
+          alt="engineer_picture" style="width: 400px; height:300px;">
+
+        <div class="form-check form-check-inline mt-2">
+          <input class="form-check-input" type="radio" name="options" id="inlineRadio1" value="工程師">
+          <label class="form-check-label" for="inlineRadio1">工程師</label>
+        </div>
+
+      </div>
+
+      <div class="designer d-flex flex-wrap justify-content-center">
+        <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg"
+          alt="designer_picture" style="width: 350px; height:300px;">
+
+        <div class="form-check form-check-inline mt-2">
+          <input class="form-check-input" type="radio" name="options" id="inlineRadio1" value="設計師">
+          <label class="form-check-label" for="inlineRadio1">設計師</label>
+        </div>
+      </div>
+
+      <div class="founder d-flex flex-wrap justify-content-center">
+        <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg"
+          alt="founder_picture" style="width: 350px; height:300px;">
+
+        <div class="form-check form-check-inline mt-2">
+          <input class="form-check-input" type="radio" name="options" id="inlineRadio1" value="創業家">
+          <label class="form-check-label" for="inlineRadio1">創業家</label>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="results d-flex justify-content-start mt-4" style="width: 1052px;height: 340px">
+
+      <button class="btn btn-primary mr-3" type="submit" style="width: 120px;height: 45px;">產生幹話</button>
+
+      <div class="alert alert-secondary ml-3" role="alert" style="width: 890px; height: 160px">
+        {{#if output}}
+        <code>
+        {{output}}
+        </code>
+        {{/if}}
+      </div>
+    </div>
+  </form>
+
+</div>
